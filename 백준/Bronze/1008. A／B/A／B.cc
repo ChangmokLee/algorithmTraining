@@ -7,7 +7,7 @@ int main() {
 
 	cin >> a >> b;
 
-	cout.precision(16);
+	cout.precision(12);
 	cout << a / b << "\n";
 	return 0;
 }
