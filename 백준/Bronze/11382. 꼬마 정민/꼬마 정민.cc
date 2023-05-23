@@ -7,7 +7,7 @@ int main() {
 
 	cin >> a >> b >> c;
 
-	cout << (long long) (a + b + c) << '\n';
-	
+	cout << (long long) a + b + c << "\n";
+
 	return 0;
 }
