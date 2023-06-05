@@ -8,17 +8,16 @@ int main() {
 	cin >> x >> y;
 
 	if (x > 0 && y > 0) {
-		cout << 1 << '\n';
-	}
-	else if (x > 0 && y < 0) {
-		cout << 4 << '\n';
+		cout << 1 << "\n";
 	}
 	else if (x < 0 && y>0) {
-		cout << 2 << '\n';
+		cout << 2 << "\n";
+	}
+	else if (x < 0 && y < 0) {
+		cout << 3 << "\n";
 	}
 	else {
-		cout << 3 << '\n';
+		cout << 4 << "\n";
 	}
-
 	return 0;
 }
