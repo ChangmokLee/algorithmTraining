@@ -11,10 +11,10 @@ int main() {
 		cout << 10000 + a * 1000 << '\n';
 	}
 	else if (a == b) {
-		cout << 1000 + b * 100 << '\n';
+		cout << 1000 + a * 100 << '\n';
 	}
 	else if (b == c) {
-		cout << 1000 + c * 100 << '\n';
+		cout << 1000 + b * 100 << '\n';
 	}
 	else if (c == a) {
 		cout << 1000 + a * 100 << '\n';
