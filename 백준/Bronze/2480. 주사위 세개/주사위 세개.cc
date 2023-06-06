@@ -3,40 +3,27 @@
 using namespace std;
 
 int main() {
-	int a, b, c, max;
+	int a, b, c;
 
 	cin >> a >> b >> c;
 
-	if (a == b && a == c) {
-		cout << 10000 + a * 1000 << '\n';
-	}
-	else if (a == b) {
-		cout << 1000 + a * 100 << '\n';
-	}
-	else if (b == c) {
-		cout << 1000 + b * 100 << '\n';
-	}
-	else if (c == a) {
-		cout << 1000 + a * 100 << '\n';
-	}
-	else {
-		if (a > b) {
-			if (a > c) {
-				cout << a * 100 << '\n';
-			}
-			else {
-				cout << c * 100 << '\n';
-			}
+	if (a == b) {
+		if (a == c) {
+			cout << 10000 + a * 1000 << "\n";
 		}
 		else {
-			if (b > c) {
-				cout << b * 100 << '\n';
-			}
-			else {
-				cout << c * 100 << '\n';
-			}
+			cout << 1000 + a * 100 << "\n";
 		}
 	}
-	
+	else if (a == c) {
+			cout << 1000 + a * 100 << "\n";
+		}
+	else if (b == c) {
+			cout << 1000 + b * 100 << "\n";
+		}
+	else {
+		int max_value = (a > b) ? ((a > c) ? a : c) : ((b > c) ? b : c);
+		cout << max_value * 100 << "\n";
+	}
 	return 0;
 }
