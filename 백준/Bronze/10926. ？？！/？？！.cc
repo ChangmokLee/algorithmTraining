@@ -1,10 +1,12 @@
 #include <iostream>
+
 using namespace std;
 
 int main() {
-	string name;
-	cin >> name;
+	string id;
 
-	cout << name + "??!" << '\n';
+	cin >> id;
+
+	cout << id + "??!" << "\n";
 	return 0;
 }
